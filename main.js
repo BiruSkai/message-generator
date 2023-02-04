@@ -4,7 +4,7 @@ function addedMsg() {
                 return "You could meet a wonderful person.";
         }
         else if (number == 1) {
-                return "You could get a present.";
+                return "You could get a lot of present";
         }
         else if (number == 2) {
                 return "You might find an ancient gold treasure";
