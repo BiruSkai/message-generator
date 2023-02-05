@@ -1,3 +1,4 @@
+// Case 1
 function addedMsg() {
         const number = Math.floor(Math.random() * 7);
         if (number == 0) {
@@ -52,4 +53,35 @@ const message = () => {
         console.log(`Your luckiest day in the week is ${day}. ${addedMsg()}`);
 };
 
-message()
+// Trigger for case 1
+message();
+
+
+//Case 2 
+const lucky = {
+        day: ["Sunday", "Monday", "Tuesday"],
+        present: ["money", "car", "free trip"],
+        total: ["$1000", "$5000", "$800"]
+}
+
+const words = parr => {
+        let day;
+        let present;
+        let total;
+for(let i = 0; i<3; i++) {
+        let random = Math.floor(Math.random() * 3);
+        if ( i === 0) {
+                day = parr.day[random];
+        } else if ( i === 1) {
+                present = parr.present[random];
+        } else if ( i === 2) {
+                total = parr.total[random];
+        }
+}
+console.log(`On ${day} you might get a ${present} with a total of ${total}.`)
+}
+
+/*
+//trigger for case 2
+words(lucky);
+*/
